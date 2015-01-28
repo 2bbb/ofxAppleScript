@@ -37,9 +37,9 @@ bool ofxRunAppleScriptFromFile(ofFile file) {
         return ofxRunAppleScript(buf.getText());
     } else {
         if(!file.exists()) {
-            ofLogWarning("ofxMacControl") << file.path() << " isn't exists.";
+            ofLogWarning("ofxAppleScript") << file.path() << " isn't exists.";
         } else {
-            ofLogWarning("ofxMacControl") << file.path() << " isn't file.";
+            ofLogWarning("ofxAppleScript") << file.path() << " isn't file.";
         }
         return false;
     }
