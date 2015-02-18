@@ -8,6 +8,8 @@
 
 #include "ofMain.h"
 
+class NSString;
+
 bool ofxRunAppleScript(NSString *command);
 bool ofxRunAppleScript(string command);
 bool ofxRunAppleScriptFromFile(string filePath);
